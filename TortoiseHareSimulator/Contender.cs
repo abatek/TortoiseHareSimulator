@@ -7,18 +7,19 @@ using System.Threading.Tasks;
 
 namespace TortoiseHareSimulator
 {
-    class Contender
+    public class Contender
     {
         protected int position;
         protected int numSteps;
         public Color color;
         public Contender()
         {
-
+            position = 0;
         }
 
         public Contender(int numSteps)
         {
+            position = 0;
             this.numSteps = numSteps;
         }
 

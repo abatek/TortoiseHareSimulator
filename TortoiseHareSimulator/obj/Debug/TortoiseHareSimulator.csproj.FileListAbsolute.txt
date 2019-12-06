@@ -1,0 +1,10 @@
+C:\Users\Andrew\source\repos\TortoiseHareSimulator\TortoiseHareSimulator\bin\Debug\TortoiseHareSimulator.exe.config
+C:\Users\Andrew\source\repos\TortoiseHareSimulator\TortoiseHareSimulator\bin\Debug\TortoiseHareSimulator.exe
+C:\Users\Andrew\source\repos\TortoiseHareSimulator\TortoiseHareSimulator\bin\Debug\TortoiseHareSimulator.pdb
+C:\Users\Andrew\source\repos\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.csprojAssemblyReference.cache
+C:\Users\Andrew\source\repos\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.Form1.resources
+C:\Users\Andrew\source\repos\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.Properties.Resources.resources
+C:\Users\Andrew\source\repos\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.csproj.GenerateResource.cache
+C:\Users\Andrew\source\repos\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.csproj.CoreCompileInputs.cache
+C:\Users\Andrew\source\repos\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.exe
+C:\Users\Andrew\source\repos\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.pdb

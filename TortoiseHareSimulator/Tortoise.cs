@@ -7,23 +7,41 @@ using System.Threading.Tasks;
 
 namespace TortoiseHareSimulator
 {
-    class Tortoise : Contender
+    public class Tortoise : Contender
     {
         public Random rnd;
 
         public Tortoise() : base()
         {
-            rnd = new Random(100);
+            rnd = new Random();
         }
 
         public Tortoise(int numSteps) : base (numSteps)
         {
-            rnd = new Random(100);
+            rnd = new Random();
         }
 
         public void updatePosition()
         {
-            throw new NotImplementedException();
+            int rand = rnd.Next(100);
+            int moveAmount;
+            
+            if (rand < 50)
+            {
+                //fast plod
+                moveAmount = 3;
+            }else if (rand < 70)
+            {
+                //slip
+                moveAmount = -6;
+            }else
+            {
+                //slow plod
+                moveAmount = 1;
+            }
+            position += moveAmount;
+            position = Math.Max(0, position);
+
         }
 
         public void Draw (Graphics g)
