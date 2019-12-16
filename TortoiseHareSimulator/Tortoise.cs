@@ -44,10 +44,9 @@ namespace TortoiseHareSimulator
 
         }
 
-        public void Draw (Graphics g)
+        public void Draw (Graphics g, int unit)
         {
-            throw new NotImplementedException();
+            g.FillEllipse(Brushes.Blue, position*unit, 63, spriteWidth, spriteHeight);
         }
-
     }
 }

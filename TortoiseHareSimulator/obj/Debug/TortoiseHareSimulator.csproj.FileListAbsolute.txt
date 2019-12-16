@@ -8,3 +8,13 @@ C:\Users\Andrew\source\repos\TortoiseHareSimulator\TortoiseHareSimulator\obj\Deb
 C:\Users\Andrew\source\repos\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.csproj.CoreCompileInputs.cache
 C:\Users\Andrew\source\repos\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.exe
 C:\Users\Andrew\source\repos\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.pdb
+C:\Users\Ivan Yevenko\Desktop\Comp Sci Projects\_ICS_4U0\TortoiseHareSimulator\TortoiseHareSimulator\bin\Debug\TortoiseHareSimulator.exe.config
+C:\Users\Ivan Yevenko\Desktop\Comp Sci Projects\_ICS_4U0\TortoiseHareSimulator\TortoiseHareSimulator\bin\Debug\TortoiseHareSimulator.exe
+C:\Users\Ivan Yevenko\Desktop\Comp Sci Projects\_ICS_4U0\TortoiseHareSimulator\TortoiseHareSimulator\bin\Debug\TortoiseHareSimulator.pdb
+C:\Users\Ivan Yevenko\Desktop\Comp Sci Projects\_ICS_4U0\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.csprojResolveAssemblyReference.cache
+C:\Users\Ivan Yevenko\Desktop\Comp Sci Projects\_ICS_4U0\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.Form1.resources
+C:\Users\Ivan Yevenko\Desktop\Comp Sci Projects\_ICS_4U0\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.Properties.Resources.resources
+C:\Users\Ivan Yevenko\Desktop\Comp Sci Projects\_ICS_4U0\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.csproj.GenerateResource.Cache
+C:\Users\Ivan Yevenko\Desktop\Comp Sci Projects\_ICS_4U0\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.csproj.CoreCompileInputs.cache
+C:\Users\Ivan Yevenko\Desktop\Comp Sci Projects\_ICS_4U0\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.exe
+C:\Users\Ivan Yevenko\Desktop\Comp Sci Projects\_ICS_4U0\TortoiseHareSimulator\TortoiseHareSimulator\obj\Debug\TortoiseHareSimulator.pdb

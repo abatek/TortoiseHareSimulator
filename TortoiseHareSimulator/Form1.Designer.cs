@@ -38,11 +38,13 @@
             // 
             // pbTrack
             // 
-            this.pbTrack.Location = new System.Drawing.Point(12, 12);
+            this.pbTrack.Location = new System.Drawing.Point(9, 10);
+            this.pbTrack.Margin = new System.Windows.Forms.Padding(2);
             this.pbTrack.Name = "pbTrack";
-            this.pbTrack.Size = new System.Drawing.Size(776, 116);
+            this.pbTrack.Size = new System.Drawing.Size(700, 100);
             this.pbTrack.TabIndex = 0;
             this.pbTrack.TabStop = false;
+            this.pbTrack.Paint += new System.Windows.Forms.PaintEventHandler(this.pbTrack_Paint);
             // 
             // timer
             // 
@@ -54,9 +56,10 @@
             this.lbl_hair.AutoSize = true;
             this.lbl_hair.Font = new System.Drawing.Font("Comic Sans MS", 72F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_hair.Location = new System.Drawing.Point(530, 143);
+            this.lbl_hair.Location = new System.Drawing.Point(398, 114);
+            this.lbl_hair.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_hair.Name = "lbl_hair";
-            this.lbl_hair.Size = new System.Drawing.Size(230, 270);
+            this.lbl_hair.Size = new System.Drawing.Size(173, 204);
             this.lbl_hair.TabIndex = 1;
             this.lbl_hair.Text = "0";
             // 
@@ -65,20 +68,21 @@
             this.lbl_tort.AutoSize = true;
             this.lbl_tort.Font = new System.Drawing.Font("Comic Sans MS", 72F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_tort.Location = new System.Drawing.Point(65, 143);
+            this.lbl_tort.Location = new System.Drawing.Point(49, 114);
+            this.lbl_tort.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_tort.Name = "lbl_tort";
-            this.lbl_tort.Size = new System.Drawing.Size(230, 270);
+            this.lbl_tort.Size = new System.Drawing.Size(173, 204);
             this.lbl_tort.TabIndex = 2;
             this.lbl_tort.Text = "0";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(720, 366);
             this.Controls.Add(this.lbl_tort);
             this.Controls.Add(this.lbl_hair);
             this.Controls.Add(this.pbTrack);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

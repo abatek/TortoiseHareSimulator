@@ -12,41 +12,52 @@ namespace TortoiseHareSimulator
 {
     public partial class Form1 : Form
     {
-        public Tortoise tort = new Tortoise();
-        public Hare hair = new Hare();
-        public int t_score = 0;
-        public int h_score = 0;
+        public Tortoise tortoise = new Tortoise();
+        public Hare hare = new Hare();
+        public int t_score;
+        public int h_score;
+        public int unit;
+        public int endPosition;
 
         public Form1()
         {
             InitializeComponent();
+            unit = pbTrack.Width / 70;
+            endPosition = unit * 70;
         }
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            tort.updatePosition();
-            hair.updatePosition();
-            int t_val = tort.getPosition();
-            int h_val = hair.getPosition();
-            if (t_val >= 70)
+            tortoise.updatePosition();
+            hare.updatePosition();
+            
+            if (tortoise.getPosition()*unit >= endPosition)
             {
                 t_score++;
-                t_val = 0;
-                h_val = 0;
+                tortoise.setPosition(0);
+                hare.setPosition(0);
             }
-            if (h_val >= 70)
+            if (hare.getPosition()*unit >= endPosition)
             {
                 h_score++;
-                t_val = 0;
-                h_val = 0;
+                tortoise.setPosition(0);
+                hare.setPosition(0);
             }
             lbl_tort.Text = t_score.ToString();
             lbl_hair.Text = h_score.ToString();
+
+            pbTrack.Invalidate();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             timer.Enabled = true;
+        }
+
+        private void pbTrack_Paint(object sender, PaintEventArgs e)
+        {
+            hare.Draw(e.Graphics, unit);
+            tortoise.Draw(e.Graphics, unit);
         }
     }
 }

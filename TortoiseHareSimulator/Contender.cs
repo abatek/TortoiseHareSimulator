@@ -1,7 +1,9 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,7 +13,11 @@ namespace TortoiseHareSimulator
     {
         protected int position;
         protected int numSteps;
+        protected static readonly int spriteWidth = 6;
+        protected static readonly int spriteHeight = 6;
+
         public Color color;
+
         public Contender()
         {
             position = 0;

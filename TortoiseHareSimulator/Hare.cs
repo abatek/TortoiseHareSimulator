@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,9 +56,9 @@ namespace TortoiseHareSimulator
             position = Math.Max(0, position);
         }
 
-        public void Draw(Graphics g)
+        public void Draw(Graphics g, int unit)
         {
-            throw new NotImplementedException();
+            g.FillRectangle(Brushes.Red, position*unit, 30, spriteWidth, spriteHeight);
         }
     }
 }
