@@ -16,11 +16,6 @@ namespace TortoiseHareSimulator
             rnd = new Random();
         }
 
-        public Tortoise(int numSteps) : base (numSteps)
-        {
-            rnd = new Random();
-        }
-
         public void updatePosition()
         {
             int rand = rnd.Next(100);
@@ -46,7 +41,7 @@ namespace TortoiseHareSimulator
 
         public void Draw (Graphics g, int unit)
         {
-            g.FillEllipse(Brushes.Blue, position*unit, 63, spriteWidth, spriteHeight);
+            g.FillEllipse(Brushes.Green, position*unit, 66 - spriteHeight / 2, spriteWidth, spriteHeight);
         }
     }
 }

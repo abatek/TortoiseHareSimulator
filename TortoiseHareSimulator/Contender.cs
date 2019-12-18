@@ -12,9 +12,9 @@ namespace TortoiseHareSimulator
     public class Contender
     {
         protected int position;
-        protected int numSteps;
-        protected static readonly int spriteWidth = 6;
-        protected static readonly int spriteHeight = 6;
+        protected static int numSteps;
+        protected static readonly int spriteWidth = 10;
+        protected static readonly int spriteHeight = 10;
 
         public Color color;
 
@@ -23,10 +23,9 @@ namespace TortoiseHareSimulator
             position = 0;
         }
 
-        public Contender(int numSteps)
+        public Contender(int position)
         {
-            position = 0;
-            this.numSteps = numSteps;
+            this.position = position;
         }
 
         public void setPosition(int position)
@@ -34,9 +33,9 @@ namespace TortoiseHareSimulator
             this.position = position;
         }
 
-        public void setNumSteps(int numSteps)
+        public static void setNumSteps(int steps)
         {
-            this.numSteps = numSteps;
+            numSteps = steps;
         }
 
         public int getPosition()
@@ -44,7 +43,7 @@ namespace TortoiseHareSimulator
             return position;
         }
 
-        public int getNumSteps()
+        public static int getNumSteps()
         {
             return numSteps;
         }
