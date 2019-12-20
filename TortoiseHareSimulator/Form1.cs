@@ -26,7 +26,8 @@ namespace TortoiseHareSimulator
             Contender.setNumSteps(70);
             unit = pbTrack.Width / Contender.getNumSteps();
             endPosition = unit * Contender.getNumSteps();
-            spriteMode = SpriteMode.PICTURE;
+            spriteMode = SpriteMode.DRAW;
+            rbDraw.Select();
         }
 
         public enum SpriteMode
@@ -108,6 +109,27 @@ namespace TortoiseHareSimulator
             hare.setPosition(0);
             updatePictureBoxPositions();
             pbTrack.Invalidate();
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            timer.Interval = 44 - trackBar1.Value * 4;
+        }
+
+        private void rbDraw_CheckedChanged(object sender, EventArgs e)
+        {
+            spriteMode = SpriteMode.DRAW;
+            pbHare.Visible = (spriteMode == SpriteMode.PICTURE);
+            pbTortoise.Visible = (spriteMode == SpriteMode.PICTURE);
+            pbTrack.Visible = (spriteMode == SpriteMode.DRAW);
+        }
+
+        private void rbPicture_CheckedChanged(object sender, EventArgs e)
+        {
+            spriteMode = SpriteMode.PICTURE;
+            pbHare.Visible = (spriteMode == SpriteMode.PICTURE);
+            pbTortoise.Visible = (spriteMode == SpriteMode.PICTURE);
+            pbTrack.Visible = (spriteMode == SpriteMode.DRAW);
         }
     }
 }

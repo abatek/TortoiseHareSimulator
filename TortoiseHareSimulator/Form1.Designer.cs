@@ -42,11 +42,15 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbDraw = new System.Windows.Forms.RadioButton();
+            this.rbPicture = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTortoise)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer
@@ -62,7 +66,7 @@
             this.lbl_hair.Location = new System.Drawing.Point(398, 114);
             this.lbl_hair.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_hair.Name = "lbl_hair";
-            this.lbl_hair.Size = new System.Drawing.Size(173, 204);
+            this.lbl_hair.Size = new System.Drawing.Size(116, 136);
             this.lbl_hair.TabIndex = 1;
             this.lbl_hair.Text = "0";
             // 
@@ -74,13 +78,13 @@
             this.lbl_tort.Location = new System.Drawing.Point(49, 114);
             this.lbl_tort.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_tort.Name = "lbl_tort";
-            this.lbl_tort.Size = new System.Drawing.Size(173, 204);
+            this.lbl_tort.Size = new System.Drawing.Size(116, 136);
             this.lbl_tort.TabIndex = 2;
             this.lbl_tort.Text = "0";
             // 
             // btnPlay
             // 
-            this.btnPlay.Location = new System.Drawing.Point(247, 169);
+            this.btnPlay.Location = new System.Drawing.Point(247, 148);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(75, 23);
             this.btnPlay.TabIndex = 5;
@@ -90,7 +94,7 @@
             // 
             // btnPause
             // 
-            this.btnPause.Location = new System.Drawing.Point(247, 232);
+            this.btnPause.Location = new System.Drawing.Point(247, 177);
             this.btnPause.Name = "btnPause";
             this.btnPause.Size = new System.Drawing.Size(75, 23);
             this.btnPause.TabIndex = 6;
@@ -100,7 +104,7 @@
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(272, 294);
+            this.btnStop.Location = new System.Drawing.Point(247, 206);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(75, 23);
             this.btnStop.TabIndex = 7;
@@ -157,16 +161,17 @@
             this.trackBar1.Minimum = 1;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar1.Size = new System.Drawing.Size(69, 196);
+            this.trackBar1.Size = new System.Drawing.Size(45, 196);
             this.trackBar1.TabIndex = 9;
             this.trackBar1.Value = 1;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(738, 294);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 20);
+            this.label1.Size = new System.Drawing.Size(13, 13);
             this.label1.TabIndex = 10;
             this.label1.Text = "1";
             // 
@@ -175,14 +180,50 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(738, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 20);
+            this.label2.Size = new System.Drawing.Size(19, 13);
             this.label2.TabIndex = 11;
             this.label2.Text = "10";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rbPicture);
+            this.groupBox1.Controls.Add(this.rbDraw);
+            this.groupBox1.Location = new System.Drawing.Point(204, 279);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(75, 66);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Mode";
+            // 
+            // rbDraw
+            // 
+            this.rbDraw.AutoSize = true;
+            this.rbDraw.Location = new System.Drawing.Point(7, 20);
+            this.rbDraw.Name = "rbDraw";
+            this.rbDraw.Size = new System.Drawing.Size(50, 17);
+            this.rbDraw.TabIndex = 0;
+            this.rbDraw.TabStop = true;
+            this.rbDraw.Text = "Draw";
+            this.rbDraw.UseVisualStyleBackColor = true;
+            this.rbDraw.CheckedChanged += new System.EventHandler(this.rbDraw_CheckedChanged);
+            // 
+            // rbPicture
+            // 
+            this.rbPicture.AutoSize = true;
+            this.rbPicture.Location = new System.Drawing.Point(7, 43);
+            this.rbPicture.Name = "rbPicture";
+            this.rbPicture.Size = new System.Drawing.Size(58, 17);
+            this.rbPicture.TabIndex = 1;
+            this.rbPicture.TabStop = true;
+            this.rbPicture.Text = "Picture";
+            this.rbPicture.UseVisualStyleBackColor = true;
+            this.rbPicture.CheckedChanged += new System.EventHandler(this.rbPicture_CheckedChanged);
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(832, 366);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.trackBar1);
@@ -204,6 +245,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbHare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,6 +267,9 @@
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rbPicture;
+        private System.Windows.Forms.RadioButton rbDraw;
     }
 }
 
